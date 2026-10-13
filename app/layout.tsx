@@ -22,9 +22,20 @@ const spaceGrotesk = Space_Grotesk({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://tesla-computacion.vercel.app"),
   title: "Tesla Computación | Tu próxima PC",
   description:
     "Service técnico y armador de PCs gamer en Barrio Constituyentes, Santa Fe Capital. Armado a medida, upgrades, service de GPU y PlayStation 5, notebooks gaming y componentes.",
+  openGraph: {
+    title: "Tesla Computación | Tu próxima PC",
+    description:
+      "Service técnico y armador de PCs gamer en Barrio Constituyentes, Santa Fe Capital.",
+    url: "https://tesla-computacion.vercel.app",
+    siteName: "Tesla Computación",
+    images: [{ url: "/og-image.png", width: 600, height: 600, alt: "Tesla Computación" }],
+    locale: "es_AR",
+    type: "website",
+  },
 };
 
 export default function RootLayout({ children }: LayoutProps<"/">) {
