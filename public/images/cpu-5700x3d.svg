@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="100%" height="100%">
+  <defs>
+    <linearGradient id="ryzenOrange" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ff6b00"/>
+      <stop offset="60%" stop-color="#e03e00"/>
+      <stop offset="100%" stop-color="#991b00"/>
+    </linearGradient>
+    <linearGradient id="ryzenDark" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#2d3748"/>
+      <stop offset="50%" stop-color="#1a202c"/>
+      <stop offset="100%" stop-color="#111827"/>
+    </linearGradient>
+    <linearGradient id="vcache3D" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ff007f"/>
+      <stop offset="100%" stop-color="#7928ca"/>
+    </linearGradient>
+    <filter id="shadowRyzen" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="10" stdDeviation="12" flood-color="#000000" flood-opacity="0.45"/>
+    </filter>
+  </defs>
+
+  <!-- Background Box 3D -->
+  <rect x="50" y="50" width="300" height="300" rx="24" fill="url(#ryzenDark)" filter="url(#shadowRyzen)" stroke="url(#ryzenOrange)" stroke-width="2"/>
+  
+  <!-- Ryzen Zen Circle Accent -->
+  <circle cx="200" cy="185" r="95" stroke="url(#ryzenOrange)" stroke-width="8" fill="none" opacity="0.3" stroke-dasharray="280 40"/>
+
+  <!-- AMD Logo -->
+  <text x="200" y="110" font-family="'Montserrat', 'Segoe UI', sans-serif" font-weight="900" font-size="28" fill="#ffffff" text-anchor="middle" letter-spacing="4">AMD</text>
+  
+  <!-- RYZEN Text -->
+  <text x="200" y="190" font-family="'Montserrat', 'Segoe UI', sans-serif" font-weight="900" font-size="44" fill="#ffffff" text-anchor="middle" letter-spacing="3">RYZEN</text>
+  
+  <!-- Number 7 -->
+  <text x="200" y="245" font-family="'Montserrat', 'Segoe UI', sans-serif" font-weight="900" font-size="46" fill="url(#ryzenOrange)" text-anchor="middle">7</text>
+
+  <!-- 3D V-Cache Badge -->
+  <rect x="85" y="278" width="230" height="38" rx="19" fill="url(#ryzenOrange)"/>
+  <text x="200" y="303" font-family="'Montserrat', 'Segoe UI', sans-serif" font-weight="800" font-size="15" fill="#ffffff" text-anchor="middle" letter-spacing="1">5700X3D • 3D V-CACHE</text>
+</svg>
